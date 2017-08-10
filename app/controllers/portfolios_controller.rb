@@ -1,4 +1,5 @@
 class PortfoliosController < ApplicationController
+  layout 'portfolio'
   # before_action :
   def index
     @portfolio_items = Portfolio.all
