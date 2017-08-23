@@ -16,4 +16,7 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+      DaymakerViewTool::Renderer.copyright 'Daymaker Digital', 'All rights reserved'
+  end
 end
