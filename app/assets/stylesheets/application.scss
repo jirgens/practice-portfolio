@@ -38,6 +38,7 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
 
+
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
@@ -160,4 +161,28 @@ body {
   .cover-container {
     width: 55rem;
   }
+}
+
+/*
+* Custom Styles
+*/
+
+.card-block > .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+// body > .container {
+//   padding-top: 60px;
+// }
+
+.card  {
+  margin-top: 35px;
+}
+.card-block {
+  color: black;
+  text-align: left;
+}
+.auth-links a {
+  color: black;
 }
