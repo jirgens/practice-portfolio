@@ -182,7 +182,18 @@ body {
 .card-block {
   color: black;
   text-align: left;
+  padding: 1.5em;
 }
 .auth-links a {
   color: black;
+}
+
+.register-text {
+  text-align: right;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.register-btn {
+  margin-right: 1em;
 }
