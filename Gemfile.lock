@@ -230,6 +230,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-sdk-s3 (~> 1.5)
   bootstrap (~> 4.0.0.alpha6)
   byebug
   carrierwave (~> 1.0)
