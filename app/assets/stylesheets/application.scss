@@ -225,3 +225,16 @@ body {
   background: image-url('yosemite2.jpg') no-repeat;
   background-size: cover;
 }
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+
+.tech-news a {
+  color: #66CCCC;
+}
+
+.tech-news > .card {
+  padding: 1.7rem;
+}
