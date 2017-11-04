@@ -1,0 +1,20 @@
+<div class="comment-card">
+  <div class="card">
+    <div class="card-block">
+      <div class="row">
+        <div class="col-md-2">
+          <%= gravatar_helper comment.user %>
+        </div>
+        <div class="col-md-10">
+          <div>
+            <%= comment.content %>
+          </div>
+          <div class="small-text">
+            <small>Comment posted by <strong><%= comment.user.first_name %></strong>
+            <%= distance_of_time_in_words(comment.created_at, Time.now) %> ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
