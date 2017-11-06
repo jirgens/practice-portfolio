@@ -238,3 +238,22 @@ body {
 .tech-news > .card {
   padding: 1.7rem;
 }
+
+.app-card-container {
+  color: black;
+  text-align: left;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.headertext {
+  text-align: center;
+}
+
+.app-card-container a {
+  color: blue;
+}
