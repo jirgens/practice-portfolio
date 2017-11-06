@@ -17,6 +17,16 @@
             class="btn btn-primary"
             type="button"
             data-toggle="collapse"
+            data-target="#skillsCard"
+            aria-expanded="false"
+            aria-controls="skillsCard"
+          >
+            Skills
+          </button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
             data-target="#jobHistory"
             aria-expanded="false"
             aria-controls="jobhistory"
@@ -35,28 +45,58 @@
           </button>
         </p>
         <p>
+          <div class="collapse" id="skillsCard">
+            <div class="card card-block">
+              <div class="skills">
+                <h2>Skills</h2>
+                <% @skills.each do |skill| %>
+                  <div class="skill">
+                    <h4><%= skill.title %></h4>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-warning"
+                            role="progressbar"
+                            aria-valuenow="<%= skill.percent_utelized %>"
+                            aria-valuemax="100"
+                            style="width: <%= skill.percent_utelized %>%"
+                            >
+                      </div>
+                    </div>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+
           <div class="collapse" id="jobHistory">
             <div class="card card-block">
-              Jobbbbbbbbbbsssssssssss
-            </div>
-            <div class="card card-block">
-              Jobbbbbbbbbbsssssssssss
-            </div>
-            <div class="card card-block">
-              Jobbbbbbbbbbsssssssssss
+              <h2>Job History</h2>
+              <div class="about-list-item">
+                Jobbbbbbbbbbsssssssssss
+              </div>
+              <div class="about-list-item">
+                Jobbbbbbbbbbsssssssssss
+              </div>
+              <div class="about-list-item">
+                Jobbbbbbbbbbsssssssssss
+              </div>
             </div>
           </div>
+
           <div class="collapse" id="education">
             <div class="card card-block">
-              College PSU
-            </div>
-            <div class="card card-block">
-              Emergency MGMT
-            </div>
-            <div class="card card-block">
-              TeaLeaf Academy Ruby on Rails
+              <h2>Education</h2>
+              <div class="about-list-item">
+                College PSU
+              </div>
+              <div class="about-list-item">
+                Emergency MGMT
+              </div>
+              <div class="about-list-item">
+                TeaLeaf Academy Ruby on Rails
+              </div>
             </div>
           </div>
+
         </p>
       </div>
     </div>
