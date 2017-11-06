@@ -1,13 +1,104 @@
-<h1>About Daymaker Digital</h1>
+<div class="app-card-container">
+  <div class="card">
+    <h1 class="headertext">About Daymaker Digital</h1>
 
-<hr>
+    <hr>
 
-<div class="row">
-  <div class="col-md-4">
-    <%= image_tag "me.jpg", width: 300, alt: "profile image" %>
-  </div>
-  <div class="col-md-8">
-    <p>Our mission statement drives our company and keeps us focused on the things that truly matter. Every company means start-ups, industry leaders, or mom-and-pop shops. We believe that the size of your budget shouldn't dictate the quality of your presence.</p>
-    <p>Beautiful design tells the story of your brand, boldly and honestly. Our work will always seek to engage an audience and build community. We believe that good design is user-centered design, meaning that we keep real people at the center of everything we do.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "me.jpg", width: '100%', alt: "profile image" %>
+      </div>
+      <!-- <div class="col-md-1"></div> -->
+      <div class="col-md-8">
+        <p>Our mission statement drives our company and keeps us focused on the things that truly matter. Every company means start-ups, industry leaders, or mom-and-pop shops. We believe that the size of your budget shouldn't dictate the quality of your presence.</p>
+        <p>Beautiful design tells the story of your brand, boldly and honestly. Our work will always seek to engage an audience and build community. We believe that good design is user-centered design, meaning that we keep real people at the center of everything we do.</p>
+        <p>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#skillsCard"
+            aria-expanded="false"
+            aria-controls="skillsCard"
+          >
+            Skills
+          </button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controls="jobhistory"
+          >
+            Job History
+          </button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controls="education"
+          >
+            Education
+          </button>
+        </p>
+        <p>
+          <div class="collapse" id="skillsCard">
+            <div class="card card-block">
+              <div class="skills">
+                <h2>Skills</h2>
+                <% @skills.each do |skill| %>
+                  <div class="skill">
+                    <h4><%= skill.title %></h4>
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-striped bg-warning"
+                            role="progressbar"
+                            aria-valuenow="<%= skill.percent_utelized %>"
+                            aria-valuemax="100"
+                            style="width: <%= skill.percent_utelized %>%"
+                            >
+                      </div>
+                    </div>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              <h2>Job History</h2>
+              <div class="about-list-item">
+                Jobbbbbbbbbbsssssssssss
+              </div>
+              <div class="about-list-item">
+                Jobbbbbbbbbbsssssssssss
+              </div>
+              <div class="about-list-item">
+                Jobbbbbbbbbbsssssssssss
+              </div>
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              <h2>Education</h2>
+              <div class="about-list-item">
+                College PSU
+              </div>
+              <div class="about-list-item">
+                Emergency MGMT
+              </div>
+              <div class="about-list-item">
+                TeaLeaf Academy Ruby on Rails
+              </div>
+            </div>
+          </div>
+
+        </p>
+      </div>
+    </div>
   </div>
 </div>

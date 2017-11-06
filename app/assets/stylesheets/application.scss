@@ -35,6 +35,16 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  font-family: 'Lato', sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
 }
 
 
@@ -237,4 +247,32 @@ body {
 
 .tech-news > .card {
   padding: 1.7rem;
+}
+
+.app-card-container {
+  color: black;
+  text-align: left;
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.headertext {
+  text-align: center;
+}
+
+.app-card-container a {
+  color: blue;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about-list-item {
+  margin-bottom: 15px;
 }
